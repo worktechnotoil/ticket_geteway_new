@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        app:cardCornerRadius="@dimen/size_5"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/count_layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/access"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply promo code to avail exclusive offer only for you."
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:textColor="@color/text_para_color"
+                    android:textFontWeight="400"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count_layout0"
+                android:layout_margin="@dimen/margin_16"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_weight="1.2"
+                    android:layout_width="195dp"
+                    android:layout_height="@dimen/size_48"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="apply code"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:textColor="@color/btn_text_color"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_48"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Apply"
+                    android:layout_weight="0.8"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:gravity="center"
+                    android:background="@drawable/followshape"
+                    android:textColor="@color/dark_blue"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/text_14" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card0"
+        android:layout_height="wrap_content"
+        android:background="@drawable/followshape"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/margin_16"
+        app:cardCornerRadius="@dimen/size_5"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/count_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Admission"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:layout_marginTop="26dp"
+                    android:textColor="@color/btn_text_color"
+                    android:textFontWeight="500"
+                    android:textSize="16dp"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="88dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:gravity="center"
+                    android:background="@drawable/quentityshape"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:src="@drawable/minus"
+                        android:layout_marginStart="@dimen/margin_3"
+                        android:id="@+id/minus"/>
+
+                    <TextView
+                        android:id="@+id/value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/btn_text_color"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/text_16"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_40"
+                        android:src="@drawable/plus"
+                        android:layout_marginEnd="@dimen/margin_3"
+                        android:id="@+id/plus"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_below="@+id/count_layout"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="#E6E8EC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headind_main"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="CA$100.00"
+                    android:textColor="@color/btn_text_color"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/text_16" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headind_main"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Incl. CA$10.00 Facility Fee"
+                    android:textColor="@color/text_para_color"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headind_main"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Sales end on Apr 16, 2023"
+                    android:textColor="@color/text_para_color"
+                    android:textFontWeight="400"
+                    android:layout_marginBottom="@dimen/margin_6"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headind_main"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Admission to event"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:textColor="@color/text_para_color"
+                    android:textFontWeight="400"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:textSize="@dimen/text_14" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:id="@+id/count_layout3"
+            android:layout_below="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/early3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Admission"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginTop="26dp"
+                android:textColor="@color/btn_text_color"
+                android:textFontWeight="500"
+                android:textSize="16dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="88dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_16"
+                android:gravity="center"
+                android:background="@drawable/quentityshape"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:src="@drawable/minus"
+                    android:layout_marginStart="@dimen/margin_3"
+                    android:id="@+id/minus2"/>
+
+                <TextView
+                    android:id="@+id/value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/btn_text_color"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/text_16"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:src="@drawable/plus"
+                    android:layout_marginEnd="@dimen/margin_3"
+                    android:id="@+id/plus2"/>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:id="@+id/fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:text="$115.00 (Incl. fees)"
+                android:textColor="@color/btn_text_color"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:textSize="@dimen/text_14"
+                android:layout_below="@+id/early3"/>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/fees"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="#E6E8EC" />
+            <TextView
+                android:id="@+id/entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Group = 5 Entries"
+                android:layout_marginTop="@dimen/margin_8"
+                android:textColor="@color/text_para_color"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textSize="@dimen/text_14"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_below="@+id/view2"/>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

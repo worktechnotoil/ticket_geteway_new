@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.homefragments.eventdetailscreen.tickes.addone.promocode.applyedcode.summary.payment.addwalletamount.WalletAddSuccessModel" />
+    </data>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/headind_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_horizontal"
+                    android:text="Successful Added"
+                    android:textColor="@color/btn_text_color"
+                    android:textFontWeight="500"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_below="@+id/linear1"
+                android:background="#E6E8EC" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rig"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_45"/>
+
+
+        <TextView
+            android:id="@+id/thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal"
+            android:text="Thank You!"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="500"
+            android:textSize="24dp" />
+        <TextView
+            android:id="@+id/amount_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal"
+            android:text="Amount of $1000.00"
+            android:layout_gravity="center"
+            android:textColor="@color/text_para_color"
+            android:textFontWeight="600"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/order_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal"
+            android:text="has been successfully added!"
+            android:layout_gravity="center"
+            android:textColor="@color/text_para_color"
+            android:textFontWeight="600"
+            android:textSize="14dp" />
+
+
+
+        <TextView
+            android:id="@+id/okay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal"
+            android:background="@drawable/edit_text_border"
+            android:text="Okay"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/margin_30"
+            android:paddingRight="@dimen/margin_30"
+            android:paddingTop="@dimen/margin_12"
+            android:textColor="@color/blue_text"
+            android:textFontWeight="500"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</layout>

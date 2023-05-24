@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BottomNavigation">
+
+
+    <include
+        layout="@layout/contentmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/toolbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginBottom="@dimen/size_15"
+                android:background="@color/background_main"
+                app:popupTheme="@style/Theme.MyApplication.PopupOverlay"
+                android:theme="@style/Theme.MyApplication.AppBarOverlay"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/circular_img"
+                    android:layout_width="@dimen/size_48"
+                    android:layout_height="@dimen/size_48"
+                    android:background="@drawable/whiteshap"
+                    android:padding="@dimen/size_12"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu3" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_below="@+id/mob"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_8"
+
+                    android:orientation="horizontal"
+                    android:background="@drawable/whiteshap">
+
+                    <ImageView
+                        android:id="@+id/search_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_11"
+                        android:src="@drawable/search">
+
+                    </ImageView>
+
+
+                    <EditText
+                        android:id="@+id/Sbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_toRightOf="@+id/search_bar"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Search..."
+                        android:lines="1"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:textColor="#0B2338"
+                        android:textColorHint="@color/hint_color"
+                        android:textFontWeight="400"
+                        android:textSize="12sp" />
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/maptext"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_7"
+                        android:src="@drawable/map"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/maptext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:textColor="#5A6872"
+                        android:textFontWeight="400"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        android:text="Toronto"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

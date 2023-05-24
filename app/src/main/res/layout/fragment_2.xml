@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/welcome_bg"
+        tools:context=".ui.welcomeUser.WelcomeActivity">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/welcome_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/size_90"
+            android:layout_height="@dimen/size_90"
+            android:layout_marginTop="@dimen/size_150"
+            android:src="@drawable/video_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/getStartedTitle"
+            style="@style/mediumText20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/get_started"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#0B2338"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/getStartedContent"
+            style="@style/peraText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_30"
+            android:layout_marginTop="@dimen/margin_23"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#5A6872"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/lorem_ipsum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getStartedTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

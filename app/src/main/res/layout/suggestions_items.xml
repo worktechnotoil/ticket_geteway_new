@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/images"
+            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/newbanner"/>
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunburn reload NYE - toronto"
+            android:textSize="@dimen/text_18"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_marginStart="@dimen/size_10"
+            android:fontFamily="@font/poppins_medium"
+            android:textFontWeight="500"
+            android:textColor="#0B2338"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginStart="@dimen/size_10"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:text="TRT Lakefront: Toronto"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:textColor="#5A6872"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginTop="@dimen/margin_12"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:text="Jan 19 to Feb 19, 2023"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:textColor="#5A6872"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash"
+                android:layout_marginStart="@dimen/margin_8"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10"
+                android:src="@drawable/time"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:00 PM - 11:00 PM "
+                android:layout_marginStart="@dimen/margin_8"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:textColor="#5A6872"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/lay1"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginEnd="20dp"
+            android:background="#E6E8EC">
+
+        </View>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginStart="@dimen/size_10"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100"
+                android:textSize="@dimen/text_18"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="600"
+                android:textColor="#0B2338"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:text="Onwards"
+                android:textSize="12dp"
+
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:textColor="#0B2338"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_15"
+
+                >
+
+                <ImageView
+                    android:id="@+id/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/line"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_7"
+                    android:src="@drawable/dash"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/favred"
+                    />
+                <ImageView
+                    android:id="@+id/heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_35"
+                    android:src="@drawable/download"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

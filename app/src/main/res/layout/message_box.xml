@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/massageboxshap">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_verifyback">
+
+        <ImageView
+            android:id="@+id/idFABHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/black"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/vector"
+            app:tint="@color/black" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativel"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+     >
+        <TextView
+            android:id="@+id/verified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Verified!"
+            android:textColor="#0B2338"
+            android:layout_gravity="center"
+            android:textFontWeight="500"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Email has been verified successfully!"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#5A6872"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textFontWeight="400" />
+        <TextView
+            android:id="@+id/supabutton"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blackshap"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textColor="#00322E"
+            android:fontFamily="@font/poppins_medium"
+            android:textFontWeight="400"
+            android:layout_marginBottom="@dimen/size_24"
+            android:text="Great" />
+    </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

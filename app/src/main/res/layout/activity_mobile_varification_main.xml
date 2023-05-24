@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.homefragments.eventdetailscreen.tickes.addone.promocode.applyedcode.summary.payment.mobileverifications.PhoneVerificationModel" />
+    </data>
+<LinearLayout
+  
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_13"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/arrow" />
+
+
+        <RelativeLayout
+            android:id="@+id/header_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/headind_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center_horizontal"
+                android:text="Phone Verification"
+                android:textColor="@color/btn_text_color"
+                android:textFontWeight="500"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mobileDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/margin_23"
+        android:fontFamily="@font/poppins_regular"
+        android:text="We will send you a One time password on this number"
+        android:textColor="@color/text_para_color"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/mobile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="@dimen/margin_23"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Enter Mobile Number"
+        android:textColor="@color/text_para_color"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mob"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginStart="@dimen/margin_23"
+        android:layout_marginEnd="@dimen/margin_23"
+        android:background="@drawable/edit_text_border"
+        android:visibility="visible">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countyCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#00322E"
+            android:textFontWeight="500"
+            app:ccp_areaCodeDetectedCountry="true"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_countryAutoDetectionPref="SIM_NETWORK"
+            app:ccp_showNameCode="false"
+            app:ccp_textSize="@dimen/text_16">
+
+        </com.hbb20.CountryCodePicker>
+
+        <ImageView
+            android:id="@+id/single_line"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_toRightOf="@id/countyCodePicker"
+            android:src="@drawable/ic_singleline"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_toRightOf="@id/single_line"
+            android:background="@null"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Mobile"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="12"
+            android:paddingLeft="10dp"
+            android:textColor="#0B2338"
+            android:textColorHint="@color/hint_color"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginBottom="@dimen/margin_13"
+        android:background="@drawable/bg_gradient">
+
+
+        <TextView
+            android:id="@+id/btnText"
+            style="@style/mediumButtonText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Continue"
+            android:textFontWeight="500" />
+
+        <ImageView
+            android:layout_width="@dimen/size_14"
+            android:layout_height="@dimen/size_14"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_toEndOf="@+id/btnText"
+            android:contentDescription="@string/social_icon"
+            android:src="@drawable/array_right" />
+
+        <!--                <ProgressBar-->
+        <!--                    android:id="@+id/pBar"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_centerInParent="true"/>-->
+
+    </RelativeLayout>
+
+/</LinearLayout>
+</layout>

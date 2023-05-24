@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.homefragments.eventdetailscreen.tickes.addone.promocode.applyedcode.ApplyedModel" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_alignParentEnd="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_50"
+                android:layout_marginBottom="@dimen/margin_25"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/couponimg"/>
+
+
+                <TextView
+                    android:id="@+id/apply_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="VIP50 Applied"
+                    android:textColor="@color/dark_blue"
+                    android:textFontWeight="500"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/apply_code_dis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Your promocode VIP50 is applied on specific tickets (VIP Admission &amp; Group Tickets)"
+                    android:textColor="@color/text_para_color"
+                    android:textFontWeight="400"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+                android:layout_below="@+id/ll_coupon"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/btn_layout_skip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="@dimen/margin_13"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="@dimen/margin_13">
+
+
+                <TextView
+                    android:id="@+id/btnSkip"
+                    style="@style/mediumButtonText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Skip"
+                    android:textFontWeight="500" />
+
+
+
+                <!--                <ProgressBar-->
+                <!--                    android:id="@+id/pBar"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerInParent="true"/>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/btn_layout_skip"
+                android:id="@+id/btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="@dimen/margin_13"
+                android:background="@drawable/bg_gradient">
+
+
+                <TextView
+                    android:id="@+id/btnText"
+                    style="@style/mediumButtonText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Continue"
+                    android:textFontWeight="500" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_14"
+                    android:layout_height="@dimen/size_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:layout_toEndOf="@+id/btnText"
+                    android:contentDescription="@string/social_icon"
+                    android:src="@drawable/array_right" />
+
+                <!--                <ProgressBar-->
+                <!--                    android:id="@+id/pBar"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerInParent="true"/>-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</layout>

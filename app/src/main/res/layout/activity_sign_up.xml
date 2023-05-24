@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.ui.signUp.SignUpViewModel" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.signUp.SignUpActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/get_started_bg">
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/skip_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_25"
+            android:src="@drawable/ic_newskip"
+            android:layout_alignParentRight="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_100"
+            android:src="@drawable/ic_newlogo"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@drawable/rounded_shape_login"
+            android:orientation="vertical"
+            android:layout_below="@+id/tgLogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tgLogo">
+
+            <ImageView
+                android:id="@+id/CROSS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_25"
+                android:src="@drawable/ic_cencle"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/largeBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#0B2338"
+                android:textFontWeight="700"
+                android:textSize="24sp"
+                android:text="@string/sign_up" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_25"
+                android:layout_marginTop="@dimen/size_20"
+                android:weightSum="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/figure_1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_85"
+                    app:cardCornerRadius="@dimen/size_10"
+                    app:cardElevation="@dimen/size_2"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toStartOf="@id/figure_2"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/social_icon"
+                        android:src="@drawable/fb" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/figure_2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_85"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    app:cardCornerRadius="@dimen/size_10"
+                    app:cardElevation="@dimen/size_2"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toStartOf="@id/figure_3"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/figure_1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/social_icon"
+                        android:src="@drawable/google" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/figure_3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_85"
+                    app:cardCornerRadius="@dimen/size_10"
+                    app:cardElevation="@dimen/size_2"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/figure_2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/social_icon"
+                        android:src="@drawable/apple" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/sig"
+                style="@style/regularText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#5A6872"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/size_24"
+                android:text="@string/or_sign_up_" />
+
+            <EditText
+                android:id="@+id/emailaddress"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:lines="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="@dimen/margin_25"
+                android:layout_marginTop="16dp"
+                android:hint="@string/enter_email_address"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                 android:paddingLeft="@dimen/size_10" />
+
+
+            <TextView
+                style="@style/peraText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#5A6872"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/size_24"
+                android:layout_marginHorizontal="@dimen/margin_25"
+                android:text="@string/verify_your" />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginHorizontal="@dimen/margin_25"
+                android:layout_marginTop="62dp"
+                android:background="@drawable/bg_gradient">
+
+                <TextView
+                    android:id="@+id/btnText"
+                    style="@style/mediumButtonText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/continue_text"
+                    android:textColor="#0B2338"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_14"
+                    android:layout_height="@dimen/size_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:layout_toEndOf="@+id/btnText"
+                    android:contentDescription="@string/social_icon"
+                    android:src="@drawable/array_right" />
+
+                <ProgressBar
+                    android:id="@+id/pBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/donthave"
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#5A6872"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"
+                    android:text="Already have an account?" />
+                <TextView
+                    android:id="@+id/navigateToSignIn"
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_2"
+                    android:textColor="#3399FF"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"
+                    android:text="@string/already_have_an_account_sign_in_here" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100"
+                android:background="@color/white">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</layout>

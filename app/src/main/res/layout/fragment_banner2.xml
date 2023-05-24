@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homefragments.eventdetailscreen.Banner2Fragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/size_5"
+        android:id="@+id/card_img">
+        <ImageView
+            android:id="@+id/banners"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/newbanner"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_alignBottom="@+id/banners"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_gradient"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_10"
+                android:src="@drawable/tag"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_10"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_4"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="700"
+                android:text="WELCOME50"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_15"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_6"
+                android:src="@drawable/dotpng"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_12"
+                android:layout_marginStart="@dimen/margin_6"
+                android:fontFamily="@font/poppins_medium"
+                android:textFontWeight="400"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_16"
+
+                android:text="Copy"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.technotoil.ticket.homefragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.technotoil.ticket.homefragments.orders.OrdersFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_orders" >
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.technotoil.ticket.homefragments.favorites.FavoritesFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorites" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.technotoil.ticket.homefragments.profiles.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/artistFragment"
+        android:name="com.technotoil.ticket.homefragments.sidemenufragments.artists.ArtistsFragment"
+        android:label="fragment_artists"
+        tools:layout="@layout/fragment_artists" >
+    </fragment>
+
+</navigation>

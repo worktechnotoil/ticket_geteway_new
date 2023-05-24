@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.ui.signIn.LoginModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.signIn.LoginActivity">
+
+
+        <LinearLayout
+            android:id="@+id/ImageVie"
+            android:layout_width="52dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="13dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#0B2338"
+            android:textFontWeight="500"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mob"
+            style="@style/mediumButtonText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Mobile Number"
+            android:textColor="#5A6872"
+            android:textFontWeight="500"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mob"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/countrypickershape"
+            android:layout_marginEnd="22dp"
+           >
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countyCodePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+
+                android:textColor="#00322E"
+                android:textFontWeight="500"
+                app:ccp_showArrow="false"
+                app:ccp_showFlag="true"
+                app:ccp_clickable="false"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_countryAutoDetectionPref="SIM_NETWORK"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="@dimen/text_16">
+
+            </com.hbb20.CountryCodePicker>
+
+
+            <EditText
+                android:id="@+id/mobileNonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/margin_2"
+                android:layout_toRightOf="@id/countyCodePicker"
+                android:background="@null"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingLeft="10dp"
+                android:text="hhf"
+                android:textColor="#00322E"
+                android:textColorHint="@color/hint_color"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/selemail"
+            style="@style/mediumButtonText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Select the email account you want to login"
+            android:textColor="#5A6872"
+            android:textFontWeight="500"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selemail"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginTop="@dimen/size_15"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/bg_gradient">
+
+
+            <TextView
+                android:id="@+id/btnText"
+                style="@style/mediumButtonText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Continue"
+                android:textFontWeight="500" />
+
+            <ImageView
+                android:layout_width="@dimen/size_14"
+                android:layout_height="@dimen/size_14"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_10"
+                android:layout_toEndOf="@+id/btnText"
+                android:contentDescription="@string/social_icon"
+                android:src="@drawable/array_right" />
+
+            <ProgressBar
+                android:id="@+id/pBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

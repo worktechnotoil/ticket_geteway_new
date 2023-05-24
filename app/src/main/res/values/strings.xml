@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TicketGetway</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="get_started">Get Started</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet consectetur. Et justo a odio molestie volutpat quam aliquam. In ut nec congue nunc nibh orci. Aenean massa a consectetur sapien sed. Feugiat sit duis sit adipiscing.\nSit sagittis ullamcorper ante.</string>
+    <string name="join_the_millions_who_ve_saved_on_event_tickets">Join the millions who’ve saved on event tickets.</string>
+    <string name="welcome_to_ticketgateway">Welcome to TicketGateway</string>
+    <string name="save_contain">I\'m new here</string>
+    <string name="sign_in">Sign in</string>
+    <string name="or_sign_in_">or sign in with</string>
+    <string name="or_sign_up_">or sign up with</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="enter_email_address"><font size="14">    Enter email address</font></string>
+    <string name="enter_password"><font size="14">    Enter password</font></string>
+    <string name="fbicon">fbIcon</string>
+    <string name="social_icon">Social Icon</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="log_in">Log In</string>
+    <!-- strings.xml -->
+    <string name="don_t_have_">Sign up here.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="verify_your">Verify your email account before you can create an event</string>
+    <string name="continue_text">Continue</string>
+    <string name="already_have_an_account_sign_in_here">Sign In here.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_drawer_nav">DrawerNav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

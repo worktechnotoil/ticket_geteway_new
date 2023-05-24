@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButton_Blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="regularText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_regular</item>
+    </style>
+
+    <style name="regularTextWhite14" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_regular</item>
+    </style>
+
+    <style name="peraText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_para_color</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_regular</item>
+    </style>
+
+    <style name="mediumText20" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_20</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_semibold</item>
+    </style>
+
+    <style name="mediumText18" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_bold</item>
+    </style>
+
+    <style name="largeWhiteText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_bold</item>
+    </style>
+
+    <style name="mediumWhiteTextBold" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_bold</item>
+    </style>
+
+    <style name="mediumWhiteText14" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_medium</item>
+    </style>
+
+    <style name="mediumButtonText14" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_medium</item>
+    </style>
+
+    <style name="mediumWhiteTextRegularBlue" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_medium</item>
+    </style>
+
+    <style name="largeBlackText" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_22</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_bold</item>
+    </style>
+
+    <style name="editTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:fontFamily" tools:targetApi="o">@font/poppins_regular</item>
+    </style>
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/down</item>
+    </style>
+    <style name="CustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.Card.Media" parent="">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeTopRight">8dp</item>
+    </style>
+
+
+</resources>

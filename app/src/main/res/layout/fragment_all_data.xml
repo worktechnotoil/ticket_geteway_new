@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.homefragments.sidemenufragments.artists.managevent.AllFragmentDataModel" />
+    </data>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/margin_16"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_48">
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_12"
+                    android:autoSizeMaxTextSize="@dimen/margin_12"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="All Organizers"
+                    android:textColor="@color/text_para_color"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/size_14" />
+
+                <Spinner
+                    android:id="@+id/spinner_arrow"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/date2"
+                    android:layout_marginStart="@dimen/margin_12"
+                    android:background="@drawable/down" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_gradient"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_height="@dimen/size_48">
+
+            <TextView
+                android:id="@+id/createevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_centerVertical="true"
+                android:autoSizeMaxTextSize="@dimen/margin_12"
+                android:drawableStart="@drawable/add"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Create Event"
+                android:textColor="@color/btn_text_color"
+                android:textFontWeight="500"
+                android:textSize="@dimen/size_14" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_below="@+id/linear"
+            android:id="@+id/recycler"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
+    </layout>

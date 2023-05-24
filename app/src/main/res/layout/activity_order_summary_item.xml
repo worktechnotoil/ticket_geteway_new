@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/margin_16"
+    android:layout_marginStart="@dimen/margin_16">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket Amount"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            android:id="@+id/header"/>
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$90.00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/btn_text_color"
+            android:textFontWeight="500"
+            android:textSize="16dp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_below="@+id/amount"
+            android:background="#E6E8EC" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Discounted"
+            android:textColor="@color/green_dark"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$90.00"
+            android:textColor="@color/green_dark"
+            android:textFontWeight="500"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/header3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount2"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Discounted"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/amount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$90.00"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="500"
+            android:textSize="16dp" />
+<!--        <TextView-->
+<!--            android:id="@+id/add_ons"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/margin_16"-->
+<!--            android:layout_below="@+id/amount3"-->
+<!--            android:text="Add ons"/>-->
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/amount3"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="#E6E8EC" />
+    </RelativeLayout>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_16"
+    android:text="Taxes &amp; Fees"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Charge"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            android:id="@+id/service_charge"/>
+        <TextView
+            android:id="@+id/amo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$9.00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/btn_text_color"
+            android:textFontWeight="500"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facility Fees"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            android:id="@+id/service_charge2"/>
+        <TextView
+            android:id="@+id/amo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$9.00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/btn_text_color"
+            android:textFontWeight="500"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processing Fees"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            android:id="@+id/service_charge3"/>
+        <TextView
+            android:id="@+id/amo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$9.00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/btn_text_color"
+            android:textFontWeight="500"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/amount"
+        android:background="#E6E8EC" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_50"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/dark_blue"
+            android:textFontWeight="600"
+            android:textSize="14dp"
+            android:id="@+id/Total_Amount"/>
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CA$99.00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/btn_text_color"
+            android:textFontWeight="600"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/amount"
+        android:background="#E6E8EC" />
+
+    <TextView
+        android:id="@+id/Refund_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Refund Policy"
+        android:textColor="@color/text_para_color"
+        android:textFontWeight="600"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/Refund_policy_dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Contact the organizer to request a refund.TicketGateway fee is non refundable."
+        android:textColor="@color/text_para_color"
+        android:textFontWeight="400"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/Contact_Organizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Contact Organizer"
+        android:textColor="@color/blue_text"
+        android:textFontWeight="500"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:textSize="14dp" />
+
+
+</LinearLayout>

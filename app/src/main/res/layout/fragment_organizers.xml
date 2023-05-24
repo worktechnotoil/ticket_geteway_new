@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.homefragments.sidemenufragments.artists.orginizer.orgizeactivity.OrginizerSuggestDataModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_60"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Trending Artists"
+            android:textColor="@color/heading_text"
+            android:textFontWeight="600"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="See all"
+            android:textColor="@color/blue_text"
+            android:textFontWeight="500"
+            android:textSize="@dimen/size_14" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/see_all"
+            android:id="@+id/recycler_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/Suggested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_horizontal"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Suggested for you"
+            android:textColor="@color/heading_text"
+            android:textFontWeight="600"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/see_all2"
+            android:layout_below="@+id/recycler_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="See all"
+            android:textColor="@color/blue_text"
+            android:textFontWeight="500"
+            android:textSize="@dimen/size_14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_suggest"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/see_all2" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ShowMap"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_8">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tagshape"
+            android:padding="@dimen/size_5"
+            android:maxLines="1"
+            android:layout_marginStart="@dimen/size_5"
+            android:layout_marginEnd="@dimen/size_5"
+            android:gravity="center"
+            android:text="Tags"
+            android:textFontWeight="400"
+            android:layout_gravity="center"
+            android:textSize="@dimen/size_14"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/blue_text"/>
+    </LinearLayout>
+</RelativeLayout>

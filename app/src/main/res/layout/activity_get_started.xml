@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.technotoil.ticket.ui.getStarted.GetStartedViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/get_started_bg"
+        tools:context=".ui.getStarted.GetStartedActivity">
+
+
+        <ImageView
+            android:id="@+id/skip_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_25"
+            android:src="@drawable/ic_newskip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/size_250"
+            android:layout_height="@dimen/size_120"
+            android:layout_marginTop="@dimen/size_150"
+            android:src="@drawable/ic_newlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_30"
+            android:layout_marginBottom="@dimen/size_100"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="700"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/join_the_millions_who_ve_saved_on_event_tickets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/margin_8"
+                android:text="@string/welcome_to_ticketgateway" />
+
+            <RelativeLayout
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_54"
+                android:layout_marginTop="@dimen/margin_13"
+                android:background="@drawable/rounded_shape"
+                android:textAllCaps="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/save_contain"
+                    android:textColor="#00322E"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_18"
+                    android:src="@drawable/hand_big" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/signInButton"
+                style="@style/mediumWhiteText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_18"
+                android:padding="@dimen/size_8"
+                android:text="@string/sign_in" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

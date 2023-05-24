@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "139662248628",
+    "project_id": "ticket-385514",
+    "storage_bucket": "ticket-385514.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139662248628:android:4b18810e0b24e73e1025e1",
+        "android_client_info": {
+          "package_name": "com.technotoil.ticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139662248628-k66712fcc3dh5af985a1ic7moai7j2cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhBCbxtH2HA5XkYzMPLmeOcOW379f9WcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139662248628-k66712fcc3dh5af985a1ic7moai7j2cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

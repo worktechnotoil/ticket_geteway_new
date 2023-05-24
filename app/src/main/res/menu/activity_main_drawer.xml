@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:id="@+id/sorting" >
+        <item
+            android:id="@+id/all_event"
+            android:checked="false"
+            android:icon="@drawable/allevent"
+            app:actionLayout="@layout/layout"
+            android:title="All Events"/>
+
+
+
+
+        <item
+            android:id="@+id/ticket"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/ticket"
+            android:title="Tickets"
+
+          />
+
+        <item
+            android:id="@+id/Favorites"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/favorites"
+            android:title="Favorites"
+
+            />
+        <item
+            android:id="@+id/wallet"
+            android:checked="false"
+            android:icon="@drawable/wallet"
+            app:actionLayout="@layout/layout"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/refund"
+            android:checked="false"
+            android:icon="@drawable/refund"
+            app:actionLayout="@layout/layout"
+            android:title="My Refunds" />
+
+        
+        <item
+            android:id="@+id/notifications"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/notification"
+            android:title="Notifications" />
+
+    </group>
+    <group android:id="@+id/sorting2" >
+
+
+        <item
+            android:id="@+id/reward"
+            android:checked="false"
+            android:icon="@drawable/percent"
+            app:actionLayout="@layout/layout"
+            android:title="Rewards  Loyalty Points" />
+
+
+        <item
+            android:id="@+id/event"
+            android:checked="false"
+            android:icon="@drawable/event"
+            app:actionLayout="@layout/layout"
+            android:title="Manage Events" />
+
+        <item
+            android:id="@+id/fashion"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/ff"
+            android:title="Costumes" />
+        <item
+            android:id="@+id/location"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/location"
+            android:title="Venue" />
+    </group>
+    <group android:id="@+id/sorting3" >
+
+
+        <item
+            android:id="@+id/artists"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/sound"
+            android:title="Artists" />
+
+        <item
+            android:id="@+id/organizers"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/organizer"
+            android:title="Organizers" />
+
+    </group>
+        <item
+            android:id="@+id/smartphone"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/smartphone"
+            android:title="Device Settings" />
+
+        <item
+            android:id="@+id/feedback"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/chat"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/fAQs"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/help"
+            android:title="FAQs" />
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            app:actionLayout="@layout/layout"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+
+        <item
+          android:name="actionMenuTextColor"
+            android:id="@+id/logout2"
+            android:checked="false"
+
+            android:title="Log Out From TicketGateway"
+            app:actionViewClass="android.widget.TextView"
+            android:textColor="#7B798E"
+            android:fontFamily="@font/poppins_medium"
+            android:textFontWeight="500"
+            android:textSize="14sp"/>
+
+
+</menu>
